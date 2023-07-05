@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    max-width: 950px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 100px auto;
+}
+
+section {
+    border-radius: 7px;
+    box-shadow: 10px 10px 30px hsl(0, 0%, 81%);
+    padding: 20px 25px 20px 25px;
+}
+
+header {
+    display: inline-flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 25px;
+}
+
+h1 {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.06rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 0.69rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* Daniel grid */
+
+.daniel {
+    grid-column: 1/3;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right 80px top 0;
+    background-size: 90px;
+}
+
+.daniel-header-div h1 {
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.7);
+    padding-bottom: 2px;
+}
+
+.daniel-header-div p {
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.daniel-main-div h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.daniel-main-div p {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+/* Jonathan grid */
+
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.jonathan-header-div h1 {
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.7);
+    padding-bottom: 2px;
+}
+
+.jonathan-header-div p {
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.jonathan-main-div h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.jonathan-main-div p {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+/* Jeanette grid */
+
+.jeanette {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.jeanette-header-div h1 {
+    margin: 0;
+    color: hsla(219, 29%, 14%, 0.7);
+    padding-bottom: 2px;
+}
+
+.jeanette-header-div p {
+    margin: 0;
+    color: hsla(219, 29%, 14%, 0.5);
+}
+
+.jeanette-main-div h2 {
+    color: hsl(219, 29%, 14%);
+}
+
+.jeanette-main-div p {
+    color: hsla(219, 29%, 14%, 0.5);
+}
+
+/* Patrick grid */
+
+.patrick {
+    grid-column: 2/4;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.patrick-header-div h1 {
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.7);
+    padding-bottom: 2px;
+}
+
+.patrick-header-div p {
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.patrick-main-div h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.patrick-main-div p {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.patrick-image {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+/* Kira grid */
+
+.kira {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.kira-header-div h1 {
+    margin: 0;
+    color: hsla(219, 29%, 14%, 0.7);
+    padding-bottom: 2px;
+}
+
+.kira-header-div p {
+    margin: 0;
+    color: hsla(219, 29%, 14%, 0.5);
+}
+
+.kira-main-div h2 {
+    color: hsl(219, 29%, 14%);
+}
+
+.kira-main-div p {
+    color: hsla(219, 29%, 14%, 0.5);
+}
+
+@media screen and (max-width: 800px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 272px;
+        margin: 20px auto;
+    }
+
+    .daniel {
+        background-position: right 20px top 0;
+    }
+}
